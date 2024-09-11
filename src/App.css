@@ -307,10 +307,20 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    padding: 5px;
+  }
   .sub-div1 {
-    flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .add-details {
+    max-width: 300px;
   }
   .sub-div1-image1 {
     display: none;
@@ -326,5 +336,8 @@ hr {
   }
   .result-container {
     justify-content: center;
+  }
+  .add-details {
+    width: 500px;
   }
 }
